@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="EcoTravel interactive FAQ accordion">
+<title>EcoTravel | Interactive FAQ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-content">
+    <a href="#" class="logo" aria-label="EcoTravel Home">Eco<span>Travel</span></a>
+    <nav aria-label="Main navigation"><a href="#faq">FAQ</a><a href="#about">About</a></nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="about">
+  <div class="container hero-content">
+    <p class="eyebrow">TRAVEL RESPONSIBLY</p>
+    <h1>Your Questions, <span>Answered.</span></h1>
+    <p class="hero-text">Learn more about sustainable travel, eco-friendly accommodations, and how EcoTravel helps you explore responsibly.</p>
+  </div>
+</section>
+
+<section class="faq-section" id="faq">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">FAQ</p>
+      <h2>Frequently Asked Questions</h2>
+      <p>Click a question to learn more about sustainable travel with EcoTravel.</p>
+    </div>
+    <div id="faq-error" class="faq-error" role="alert" hidden>The FAQ component could not be loaded. Please refresh the page and try again.</div>
+
+    <div class="accordion" id="faqAccordion">
+      <article class="faq-item">
+        <h3><button type="button" class="faq-button" aria-expanded="false" aria-controls="faq-answer-1" id="faq-button-1"><span>What is sustainable travel?</span><span class="faq-icon" aria-hidden="true">+</span></button></h3>
+        <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-button-1" hidden><div class="answer-content">Sustainable travel means exploring destinations while reducing environmental impact and supporting local communities. It can include responsible transportation, eco-friendly accommodations, and locally owned businesses.</div></div>
+      </article>
+
+      <article class="faq-item">
+        <h3><button type="button" class="faq-button" aria-expanded="false" aria-controls="faq-answer-2" id="faq-button-2"><span>How can I find eco-friendly accommodations?</span><span class="faq-icon" aria-hidden="true">+</span></button></h3>
+        <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-button-2" hidden><div class="answer-content">Look for accommodations that use renewable energy, reduce water consumption, minimize waste, and support the surrounding community. Eco-certifications can also help identify responsible properties.</div></div>
+      </article>
+
+      <article class="faq-item">
+        <h3><button type="button" class="faq-button" aria-expanded="false" aria-controls="faq-answer-3" id="faq-button-3"><span>How does EcoTravel promote responsible tourism?</span><span class="faq-icon" aria-hidden="true">+</span></button></h3>
+        <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-button-3" hidden><div class="answer-content">EcoTravel highlights lower-impact travel options, local experiences, sustainable accommodations, and destinations that prioritize environmental and community protection.</div></div>
+      </article>
+
+      <article class="faq-item">
+        <h3><button type="button" class="faq-button" aria-expanded="false" aria-controls="faq-answer-4" id="faq-button-4"><span>Can sustainable travel be affordable?</span><span class="faq-icon" aria-hidden="true">+</span></button></h3>
+        <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-button-4" hidden><div class="answer-content">Yes. Sustainable travel does not always mean spending more. Public transport, locally owned accommodations, avoiding unnecessary flights, and supporting local businesses can often be affordable choices.</div></div>
+      </article>
+
+      <article class="faq-item">
+        <h3><button type="button" class="faq-button" aria-expanded="false" aria-controls="faq-answer-5" id="faq-button-5"><span>How can I support local communities?</span><span class="faq-icon" aria-hidden="true">+</span></button></h3>
+        <div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-button-5" hidden><div class="answer-content">Travelers can support local communities by purchasing local products, eating at locally owned restaurants, booking local guides, and respecting local traditions and environments.</div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container cta-content">
+    <p class="eyebrow">EXPLORE WITH PURPOSE</p>
+    <h2>Go somewhere beautiful.<br>Leave it beautiful.</h2>
+    <a href="#faq" class="cta-button">Explore FAQs</a>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-content">
+    <p>© <span id="currentYear"></span> EcoTravel. Travel responsibly.</p>
+    <p>Week 2 Interactive UI Component</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
