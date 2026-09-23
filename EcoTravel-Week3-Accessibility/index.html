@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="EcoTravel accessible sustainable travel information portal.">
+<title>EcoTravel | Accessible Sustainable Travel Guide</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#home" aria-label="EcoTravel home">Eco<span>Travel</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+      <span class="sr-only">Toggle navigation menu</span><span aria-hidden="true">☰</span>
+    </button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+      <ul>
+        <li><a href="#home">Home</a></li><li><a href="#guides">Guides</a></li>
+        <li><a href="#tips">Accessibility Tips</a></li><li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+<section id="home" class="hero" aria-labelledby="hero-title">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">Accessible • Responsible • Inspiring</p>
+      <h1 id="hero-title">Travel better, with everyone in mind.</h1>
+      <p class="hero-text">Explore practical ideas for sustainable journeys and more inclusive travel experiences.</p>
+      <a class="button primary-button" href="#guides">Explore travel guides</a>
+    </div>
+    <aside class="hero-note" aria-label="Accessibility commitment">
+      <h2>Designed for everyone</h2>
+      <p>This page supports keyboard navigation, visible focus, readable contrast, semantic structure and reduced-motion preferences.</p>
+    </aside>
+  </div>
+</section>
+
+<section id="guides" class="section" aria-labelledby="guides-title">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">Travel information portal</p><h2 id="guides-title">Sustainable travel guides</h2>
+      <p>Simple guides to help you make thoughtful choices before and during your trip.</p>
+    </div>
+    <div class="content-layout">
+      <div class="article-list">
+        <article class="card"><div class="card-tag">Destination</div><h3>Kerala: slow travel through nature</h3>
+          <p>Choose local stays, responsible experiences and low-impact transport while exploring backwaters and green landscapes.</p>
+          <a class="text-link" href="#tips">Read the guide <span aria-hidden="true">→</span></a></article>
+        <article class="card"><div class="card-tag">Planning</div><h3>Build a lower-impact itinerary</h3>
+          <p>Group nearby activities, use public transport where practical, and leave time for local communities and nature.</p>
+          <a class="text-link" href="#tips">Read the guide <span aria-hidden="true">→</span></a></article>
+        <article class="card"><div class="card-tag">Community</div><h3>Travel that supports local people</h3>
+          <p>Look for locally owned businesses, guides and experiences so more of your travel spending stays in the destination.</p>
+          <a class="text-link" href="#about">Read the guide <span aria-hidden="true">→</span></a></article>
+      </div>
+      <aside class="sidebar" aria-labelledby="quick-links-title">
+        <h2 id="quick-links-title">Quick checklist</h2>
+        <ul class="checklist"><li>Plan accessible routes and facilities.</li><li>Prefer reusable travel essentials.</li><li>Respect local culture and communities.</li><li>Keep nature areas clean and protected.</li></ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="tips" class="section alt-section" aria-labelledby="tips-title">
+  <div class="container">
+    <div class="section-heading"><p class="eyebrow">Inclusive travel</p><h2 id="tips-title">Accessibility tips</h2>
+      <p>Use these questions to make trip planning more considerate and practical.</p></div>
+    <div class="accordion" data-accordion>
+      <article class="accordion-item"><h3><button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="answer-1" id="question-1">How can I check whether a destination is accessible?</button></h3>
+        <div class="accordion-panel" id="answer-1" role="region" aria-labelledby="question-1" hidden><p>Check accommodation and transport information in advance, contact providers with specific questions, and confirm details such as step-free entrances, accessible toilets and route conditions.</p></div></article>
+      <article class="accordion-item"><h3><button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="answer-2" id="question-2">How can websites be easier to use with a keyboard?</button></h3>
+        <div class="accordion-panel" id="answer-2" role="region" aria-labelledby="question-2" hidden><p>Interactive controls should be reachable with Tab, have a clear focus indicator, use native buttons or links where possible, and provide logical reading and interaction order.</p></div></article>
+      <article class="accordion-item"><h3><button class="accordion-trigger" type="button" aria-expanded="false" aria-controls="answer-3" id="question-3">Why are clear labels important?</button></h3>
+        <div class="accordion-panel" id="answer-3" role="region" aria-labelledby="question-3" hidden><p>Clear labels help people understand what controls do, including users of screen readers and people with cognitive or learning disabilities. Labels should describe the action or purpose without relying only on visual context.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section" aria-labelledby="about-title">
+  <div class="container about-box">
+    <div><p class="eyebrow">About this project</p><h2 id="about-title">Accessibility is part of good UX.</h2>
+      <p>This Week 3 project applies semantic HTML, accessible interaction patterns, keyboard support, visible focus states, responsive layouts, readable contrast and reduced-motion support.</p></div>
+    <div class="audit-card" aria-label="Accessibility checklist summary"><h3>Accessibility focus</h3>
+      <ul><li>Semantic landmarks</li><li>Keyboard operation</li><li>ARIA for dynamic content</li><li>Responsive and reduced motion</li></ul></div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer"><div class="container footer-inner">
+  <p>© <span id="current-year"></span> EcoTravel. Week 3 Accessibility Project.</p><a href="#main-content">Back to main content</a>
+</div></footer>
+<div id="status-message" class="sr-only" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
