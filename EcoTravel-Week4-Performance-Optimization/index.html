@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="EcoTravel performance-optimized sustainable travel guide.">
+<title>EcoTravel | Performance-Optimized Travel Guide</title>
+<link rel="preload" href="style.min.css" as="style">
+<link rel="stylesheet" href="style.min.css">
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#home" aria-label="EcoTravel home">Eco<span>Travel</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span class="sr-only">Toggle navigation</span>☰</button>
+    <nav id="primary-nav" aria-label="Primary navigation">
+      <ul>
+        <li><a href="#home">Home</a></li><li><a href="#guides">Guides</a></li><li><a href="#tips">Tips</a></li><li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+<section id="home" class="hero" aria-labelledby="hero-title">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">Fast • Simple • Sustainable</p>
+      <h1 id="hero-title">Travel better, with less digital weight.</h1>
+      <p class="hero-text">A performance-focused EcoTravel information portal built with lightweight HTML, CSS and vanilla JavaScript.</p>
+      <a class="button" href="#guides">Explore guides</a>
+    </div>
+    <div class="hero-stat" aria-label="Performance approach">
+      <strong>Lean</strong><span>assets</span>
+      <strong>Fast</strong><span>first paint</span>
+      <strong>Simple</strong><span>JavaScript</span>
+    </div>
+  </div>
+</section>
+
+<section id="guides" class="section" aria-labelledby="guides-title">
+<div class="container">
+  <div class="section-heading"><p class="eyebrow">Travel information</p><h2 id="guides-title">Sustainable travel guides</h2><p>Useful information presented with a small DOM, efficient CSS and minimal scripting.</p></div>
+  <div class="cards">
+    <article class="card"><span class="tag">Destination</span><h3>Kerala: slow travel</h3><p>Choose local stays, responsible experiences and low-impact transport while exploring green landscapes.</p><a href="#tips">Read guide →</a></article>
+    <article class="card"><span class="tag">Planning</span><h3>Lower-impact itineraries</h3><p>Group nearby activities, use public transport where practical, and leave time for local communities.</p><a href="#tips">Read guide →</a></article>
+    <article class="card"><span class="tag">Community</span><h3>Support local people</h3><p>Look for locally owned businesses and experiences so more travel spending stays in the destination.</p><a href="#about">Read guide →</a></article>
+  </div>
+</div>
+</section>
+
+<section id="tips" class="section alt" aria-labelledby="tips-title">
+<div class="container">
+  <div class="section-heading"><p class="eyebrow">Quick answers</p><h2 id="tips-title">Performance-friendly travel tips</h2></div>
+  <div class="accordion">
+    <article class="item"><h3><button class="trigger" type="button" aria-expanded="false" aria-controls="answer-1" id="q1">Why does a lightweight page load faster?</button></h3><div class="panel" id="answer-1" role="region" aria-labelledby="q1" hidden><p>Smaller files and fewer browser tasks reduce the amount of data to download, parse and execute before users can interact comfortably.</p></div></article>
+    <article class="item"><h3><button class="trigger" type="button" aria-expanded="false" aria-controls="answer-2" id="q2">What does lazy loading do?</button></h3><div class="panel" id="answer-2" role="region" aria-labelledby="q2" hidden><p>Lazy loading delays non-critical resources until they are likely to be needed. This project keeps the initial page intentionally image-light and avoids unnecessary third-party assets.</p></div></article>
+    <article class="item"><h3><button class="trigger" type="button" aria-expanded="false" aria-controls="answer-3" id="q3">Why avoid unnecessary JavaScript?</button></h3><div class="panel" id="answer-3" role="region" aria-labelledby="q3" hidden><p>Less JavaScript means less parsing, compilation and execution work. Native HTML controls are used whenever they can provide the required behavior.</p></div></article>
+  </div>
+</div>
+</section>
+
+<section id="about" class="section" aria-labelledby="about-title">
+<div class="container about"><div><p class="eyebrow">Week 4</p><h2 id="about-title">Frontend performance optimization</h2><p>This version prioritizes a fast critical path, minified CSS/JS, no render-blocking third-party scripts, reduced DOM complexity and browser caching through cache-friendly static assets.</p></div><div class="metrics"><div><b>HTML</b><span>semantic & compact</span></div><div><b>CSS</b><span>minified</span></div><div><b>JS</b><span>minimal</span></div></div></div>
+</section>
+</main>
+
+<footer><div class="container footer-inner"><p>© <span id="year"></span> EcoTravel. Week 4 Performance Project.</p><a href="#main-content">Back to main content</a></div></footer>
+<script src="script.min.js" defer></script>
+</body>
+</html>
